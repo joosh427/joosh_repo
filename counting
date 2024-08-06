@@ -4,7 +4,6 @@ aggTask.addActiveQuery();
 aggTask.query();
 
 while (aggTask.next()) {
-    //gs.info(gr.getValue('number'));
     var count = aggTask.getAggregate('COUNT');
     gs.info(count);
 }
